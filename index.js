@@ -17,7 +17,7 @@ let target = "Mumbai" //Default Location
 const fetchData = async(target) =>{
 
     try {
-        const url = `https://api.weatherapi.com/v1/current.json?key=4ee2573e35764b0aa7b110401222212&q=${target}`
+        const url = `https://api.weatherapi.com/v1/current.json?key=4ee257d935764b0aa7b110401222212&q=${target}`
 
     const response = await fetch(url);
     
