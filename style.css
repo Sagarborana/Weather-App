@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.65;
+}
+
+.weather{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.weather1{
+    font-size: 4rem;
+}
+
+.weather p{
+    font-size: 2rem;
+}
+
+.weather span{
+    font-size: 0.75rem;
+}
+
+.weather3 span{
+    margin: 0.3rem;
+}
+
+nav{
+    z-index: 3;
+    border-radius: 0 0 100px 100px;
+    padding: 1rem 0;
+    height: 100px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.18);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    background-color: rgba(180,177,177,0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather >div{
+    margin: 0.625rem;
+}
+
+.weather3 img{
+    width: 2rem;
+}
+
+nav form{
+    width: 70%;
+    /* background-color: rgb(255,155,155); */
+    grid-template-columns: 5fr 1fr;
+    display: grid;
+}
+
+.searchField{
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 98%;
+}
+
+nav form button{
+    background-color: rgb(255, 175, 45);
+    border-radius: 0 25px 25px 0;
+    font-size: 1.1rem;
+    color: rgb(255, 232, 232);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.day{
+    background-image: url(day.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.night{
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wind1{
+    /* width:300px;
+    height:100px; */
+    /* background-color: white; */
+    position: absolute;
+    bottom:20%;
+    /* right:32%; */
+    margin: auto;
+    font-size: 1rem;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    letter-spacing: 0.5px;
+}
